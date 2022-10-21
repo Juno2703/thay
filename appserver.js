@@ -74,8 +74,8 @@ appServer.use("/login", LoginRouter);
 const PCRouter = require("./controller/PCController").PCRouter;
 appServer.use("/PC", PCRouter);
 
-const CategoryRouter = require("./controller/CategoryController").CategoryRouter;
-appServer.use("/Category", CategoryRouter);
+const AdminRouter = require("./controller/AdminController").AdminRouter;
+appServer.use("/Admin", AdminRouter);
 
 const UserRouter = require("./controller/UserController").UserRouter;
 appServer.use("/User", UserRouter);

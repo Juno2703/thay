@@ -77,8 +77,6 @@ appServer.use("/PC", PCRouter);
 const UserRouter = require("./controller/UserController").UserRouter;
 appServer.use("/User", UserRouter);
 
-const AdminRouter = require("./controller/AdminController").AdminRouter;
-appServer.use("/Admin", AdminRouter);
 
 
 

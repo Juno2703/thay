@@ -47,7 +47,7 @@ router.use( (loixayra, yeucau, trave, ketiep) => {
 
 // ------------------- Routing
 router.get( "/" , (yeucau, trave) => {
-    trave.render("main", {TenTrang: "Main Chinh !!!"} );
+    trave.render("userviewhomepage", {TenTrang: "Main Chinh !!!"} );
 });
 
 router.get( "/home" , (yeucau, trave) => {
@@ -74,14 +74,7 @@ appServer.use("/login", LoginRouter);
 const PCRouter = require("./controller/PCController").PCRouter;
 appServer.use("/PC", PCRouter);
 
-const CategoryRouter = require("./controller/CategoryController").CategoryRouter;
-appServer.use("/Category", CategoryRouter);
 
-const UserRouter = require("./controller/UserController").UserRouter;
-appServer.use("/User", UserRouter);
-
-const AdminRouter = require("./controller/AdminController").AdminRouter;
-appServer.use("/Admin", AdminRouter);
 
 // ----------- RUN / Launching !!! 
 appServer.listen( PORT );
